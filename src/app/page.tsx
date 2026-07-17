@@ -4,6 +4,8 @@ import ReviewCard from "@/components/ReviewCard";
 import Link from "next/link";
 import { Music, Activity } from "lucide-react";
 
+export const dynamic = "force-dynamic";
+
 /**
  * HomePage Server Component (Landing Page).
  * Explaining: Fetches all reviews in PostgreSQL ordered chronologically (newest first).

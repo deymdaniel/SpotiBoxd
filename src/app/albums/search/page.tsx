@@ -2,6 +2,8 @@ import { searchAlbums } from "@/lib/lastfm";
 import AlbumCard from "@/components/AlbumCard";
 import { Search, Music } from "lucide-react";
 
+export const dynamic = "force-dynamic";
+
 interface SearchProps {
   searchParams: Promise<{ q?: string }>;
 }

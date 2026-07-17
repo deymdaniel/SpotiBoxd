@@ -6,6 +6,8 @@ import ReviewCard from "@/components/ReviewCard";
 import { Music, Clock, Play } from "lucide-react";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 interface AlbumDetailPageProps {
   params: Promise<{
     artist: string;
