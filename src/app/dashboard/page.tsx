@@ -110,7 +110,7 @@ export default async function DashboardPage() {
             </div>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {favorites.map((fav) => (
+              {favorites.map((fav: any) => (
                 <AlbumCard
                   key={fav.id}
                   title={fav.album.title}
@@ -136,7 +136,7 @@ export default async function DashboardPage() {
             </div>
           ) : (
             <div className="space-y-3">
-              {listenList.map((item) => (
+              {listenList.map((item: any) => (
                 <div
                   key={item.id}
                   className="glass-panel border border-card-border rounded-lg p-3 flex items-center gap-3 hover:border-zinc-800 transition-colors"
